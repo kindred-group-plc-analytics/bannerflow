@@ -23,3 +23,4 @@ var project = BF_prop.LandingPageName.toString().replace(/:/ig, '').trim();
 var brand = b.adb_site_brand || 'no brand';
 
 b.adb_bannerflow_name = [project, brand, market, bannerFlowMarketingChannel, bannerFlowProduct].join(':');
+b.adb_pageName = 'Landing Page:' + project;
