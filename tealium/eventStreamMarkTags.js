@@ -9,7 +9,8 @@ var adFormIds = {
         'lt': '506922',
         'fi': '369327',
         'ee': '422830',
-        'dk': '453325'
+        'dk': '453325',
+        'be': '169038'
     },
     'maria': {
         'se': '899833',
@@ -21,7 +22,7 @@ var adFormIds = {
         'all': '1219876'
     },
     'highroller': {
-        'all': '',
+        'all': ''
     },
     'vlad': {
         'all': ''
@@ -34,6 +35,17 @@ var adFormIds = {
     },
 };
 
-var brand = adFormIds[b.adb_site_brand];
+var gaIds = {
+    'unibet': 'UA-1737305-1',
+    'vlad': 'UA-113069099-1',
+    'igame': 'UA-3364773-20',
+    'maria': 'UA-771816-1',
+    'huone': 'UA-3364773-10',
+    'kolikkopelit': 'UA-17453318-1'
+};
+
+var adFormDetails = adFormIds[b.adb_site_brand];
 var curId = (brand[BF_prop.RegionCode.toLowerCase()] ? brand[BF_prop.RegionCode.toLowerCase()] : brand['all']);
 b.evAdFormTagID = curId;
+
+b.ga_account_id = gaIds[b.adb_site_brand];
