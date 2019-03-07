@@ -2,19 +2,20 @@ var path = document.location.pathname.toLowerCase();
 
 // Marketing Channel identification
 var bannerFlowMarketingChannel = 'no channel';
-bannerFlowMarketingChannel = (path.indexOf('/aff/') > -1 ? 'aff' : bannerFlowMarketingChannel);
-bannerFlowMarketingChannel = (path.indexOf('/prog/') > -1 ? 'prog' : bannerFlowMarketingChannel);
-bannerFlowMarketingChannel = (path.indexOf('/ppc/') > -1 ? 'ppc' : bannerFlowMarketingChannel);
-bannerFlowMarketingChannel = (path.indexOf('/some/') > -1 ? 'some' : bannerFlowMarketingChannel);
-bannerFlowMarketingChannel = (path.indexOf('/pop/') > -1 ? 'pop' : bannerFlowMarketingChannel);
+bannerFlowMarketingChannel = (path.indexOf('aff') > -1 ? 'aff' : bannerFlowMarketingChannel);
+bannerFlowMarketingChannel = (path.indexOf('prog') > -1 ? 'prog' : bannerFlowMarketingChannel);
+bannerFlowMarketingChannel = (path.indexOf('ppc') > -1 ? 'ppc' : bannerFlowMarketingChannel);
+bannerFlowMarketingChannel = (path.indexOf('some') > -1 ? 'some' : bannerFlowMarketingChannel);
+bannerFlowMarketingChannel = (path.indexOf('pop') > -1 ? 'pop' : bannerFlowMarketingChannel);
 
 // Product Identification
 var bannerFlowProduct = 'no product';
-bannerFlowProduct = (path.indexOf('/sportsbook/') > -1 ? 'sportsbook' : bannerFlowProduct);
-bannerFlowProduct = (path.indexOf('/casino/') > -1 ? 'casino' : bannerFlowProduct);
-bannerFlowProduct = (path.indexOf('/poker/') > -1 ? 'poker' : bannerFlowProduct);
-bannerFlowProduct = (path.indexOf('/bingo/') > -1 ? 'bingo' : bannerFlowProduct);
-bannerFlowProduct = (path.indexOf('/live-casino/') > -1 ? 'live-casino' : bannerFlowProduct);
+bannerFlowProduct = (path.indexOf('sportsbook') > -1 ? 'sportsbook' : bannerFlowProduct);
+bannerFlowProduct = (path.indexOf('casino') > -1 ? 'casino' : bannerFlowProduct);
+bannerFlowProduct = (path.indexOf('poker') > -1 ? 'poker' : bannerFlowProduct);
+bannerFlowProduct = (path.indexOf('bingo') > -1 ? 'bingo' : bannerFlowProduct);
+bannerFlowProduct = (path.indexOf('live-casino') > -1 ? 'live-casino' : bannerFlowProduct);
+bannerFlowProduct = (path.indexOf('lottery') > -1 ? 'lottery' : bannerFlowProduct);
 
 var market = BF_prop.LanguageCode.toLowerCase() + '_' + BF_prop.RegionCode.toUpperCase();
 
