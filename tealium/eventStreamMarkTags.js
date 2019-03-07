@@ -45,7 +45,7 @@ var gaIds = {
 };
 
 var adFormDetails = adFormIds[b.adb_site_brand];
-var curId = (brand[BF_prop.RegionCode.toLowerCase()] ? brand[BF_prop.RegionCode.toLowerCase()] : brand['all']);
-b.evAdFormTagID = curId;
+var adFormId = (adFormDetails[BF_prop.RegionCode.toLowerCase()] ? adFormDetails[BF_prop.RegionCode.toLowerCase()] : adFormDetails['all']);
+b.evAdFormTagID = adFormId;
 
 b.ga_account_id = gaIds[b.adb_site_brand];
