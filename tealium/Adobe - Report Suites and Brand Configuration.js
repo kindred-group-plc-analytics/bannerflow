@@ -55,7 +55,7 @@ var brandDetails = {
 
 var reportSuite = brandDetails[domain].reportSuite;
 if (subDomain.toLowerCase() == 'welcome') {
-    reportsuite += SUFFIX_PROD;
+    reportSuite += SUFFIX_PROD;
 } else {
     reportSuite += SUFFIX_DEV;
 }
