@@ -34,6 +34,10 @@ var adFormIds = {
     'huone': {
         'all': '1236049'
     },
+    'bingo' : {
+        'se': '1487638',
+        'no': '1487636',
+    }
 };
 
 var gaIds = {
