@@ -30,29 +30,3 @@ b.adb_bannerflow_name = [project, brand, market, bannerFlowMarketingChannel, ban
 b.adb_pageName = 'LP:' + project;
 b.adb_section = 'bannerFlow';
 b.adb_client_id = '';
-
-// Audience Manager specific variable
-var domain = (function () {
-    var locale = window.locale;
-
-    if ((window.location.hostname.indexOf("banners") > -1 || window.location.hostname.indexOf("ads") > -1 || window.location.hostname.indexOf("welcome") > -1) && typeof locale !== "undefined") {
-        return document.location.hostname + ":" + locale;
-    } else {
-        return document.location.hostname;
-    }
-})();
-
-var deviceGroup = (function () {
-    if (navigator.userAgent.match(/iPad/i)) {
-        return 'tablet';
-    } else if (navigator.userAgent.match(/mobile/i)) {
-        return 'mobilephone';
-    } else if (navigator.userAgent.match(/Android|Touch/i)) {
-        return 'tablet';
-    } else {
-        return 'desktop';
-    }
-})();
-
-var evar1 = domain + ":::" + deviceGroup + window.location.pathname.replace(/\//g, ':');
-b.adb_pageName_evar1 = evar1;
