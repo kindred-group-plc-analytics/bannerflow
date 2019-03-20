@@ -34,9 +34,12 @@ var adFormIds = {
     'huone': {
         'all': '1236049'
     },
-    'bingo' : {
+    'bingo': {
         'se': '1487638',
         'no': '1487636',
+    },
+    'all': {
+        'all': '1556581'
     }
 };
 
@@ -49,7 +52,7 @@ var gaIds = {
     'kolikkopelit': 'UA-17453318-1'
 };
 
-var adFormDetails = adFormIds[b.adb_site_brand];
+var adFormDetails = (adFormIds[b.adb_site_brand] ? adFormIds[b.adb_site_brand] : adFormIds['all']);
 var adFormId = (adFormDetails[BF_prop.RegionCode.toLowerCase()] ? adFormDetails[BF_prop.RegionCode.toLowerCase()] : adFormDetails['all']);
 b.evAdFormTagID = adFormId;
 
