@@ -28,5 +28,5 @@ var brand = b.adb_site_brand || 'no brand';
 
 b.adb_bannerflow_name = [project, brand, market, bannerFlowMarketingChannel, bannerFlowProduct, isValueStats].join(':');
 b.adb_pageName = 'LP:' + project;
-b.adb_section = 'bannerFlow';
+b.adb_section = 'bf_landingpage';
 b.adb_client_id = '';
