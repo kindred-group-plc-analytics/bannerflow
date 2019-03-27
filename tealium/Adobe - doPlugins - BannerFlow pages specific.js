@@ -18,7 +18,7 @@ bannerFlowProduct = (path.indexOf('live-casino') > -1 ? 'live-casino' : bannerFl
 bannerFlowProduct = (path.indexOf('lottery') > -1 ? 'lottery' : bannerFlowProduct);
 
 // ValueStats Flag
-var isValueStats = (document.location.search.indexOf('valuestats') > -1 ? 'vs_y' : 'vs_n');
+var isValueStats = (document.location.search.toLowerCase().indexOf('valuestats') > -1 ? 'vs_y' : 'vs_n');
 
 var market = BF_prop.LanguageCode.toLowerCase() + '_' + BF_prop.RegionCode.toUpperCase();
 
