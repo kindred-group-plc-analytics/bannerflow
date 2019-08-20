@@ -37,6 +37,7 @@
 (function () {
 
 
+    // EventStream Start
     // Footer pages should be excluded from DTM tracking
     var isFooter = window.location.href.indexOf('-footer-') > -1;
 
@@ -53,7 +54,7 @@
             d.getElementsByTagName('head')[0].appendChild(script);
         }(document));
     } else if (!isFooter) {
-
+        // Altenrative facebook tracking
         var idList = {
             gb: '1437591169856709',
             it: '349976165212687',

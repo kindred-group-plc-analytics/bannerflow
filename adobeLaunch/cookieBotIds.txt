@@ -1,0 +1,8 @@
+bingo:      a98f4599-eb88-492e-a061-1a35f66f5391
+unibet:     b5b8a13f-3aeb-4f5d-8106-6e3807c93d7e
+vlad:       57227dbf-cdd1-4b5e-89f0-1c83d7345da7
+highroller: a2fcaea6-048a-493a-902b-a3e639ab3d65
+maria:      4262169f-c990-41fe-a5af-661e5ef9cb19
+igame:      f0a23e7d-4d0f-43e8-9a46-5a462d716caf
+kolikopelit:30a06510-c4f7-44e9-8063-ed0c7818d026
+huone:      57c9220a-92a7-401c-9f78-2cff1a7f3e46
